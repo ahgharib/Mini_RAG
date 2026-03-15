@@ -16,9 +16,29 @@
 ## gitignore file:
 - Using the python version of .gitignore file from the gitignore repo on github
 
+## .env and .env.example files:
+- these Files are a Must in any project because they Contain System Variables and Secret Keys that Are required for the project to run
+- .env is the main file that the system uses and it is ignored by gitignore
+- .env.example is the public file that Must have the same variable Names as .env but without the actual values (secret key values) and it might contain an example of the values
+- .env.example is not ignored by gitignore
+
 ## Optional for better terminal writting 
 - command for start writting from a new empty line
+
 ```bash
 export PS1="\[\033[01;32m\]\u@\h:\w\n\[\033[00m\]\ $ "
 ```
 
+## Installation
+
+### Install the required packages
+
+```bash
+pip install -r requirements.txt
+```
+
+### Setup the environment variables
+
+```bash
+cp .env.example .env
+```
