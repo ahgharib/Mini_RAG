@@ -1,11 +1,9 @@
 from fastapi import FastAPI
+from routes import base
+from dotenv import load_dotenv
+
+# .env is the default value
+load_dotenv(".env")
 app = FastAPI()
 
-# decorator: is a line of code that calls a function but with a specific logic
-# this decorator: calls the function but if the user enters the URL/welcome
-@app.get("/welcome")
-# a normal fuction that return a dic
-def welcome():
-    return {
-        "message": "Hello World!"
-    }
+app.include_router(base.base_router)
