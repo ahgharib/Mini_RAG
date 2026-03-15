@@ -89,3 +89,9 @@ uvicorn main:app --reload --host 0.0.0.0 --port 5000
 - a folder for routes in the App
 - Instead of Using main.py and writting all routes in it is best to separate routes in python files
 - it is best to have a base route "URL/" this can be used for health checks by DevOps and has other Uses
+
+## Project Folder and files Archeticture
+- From the best practicies that we use an already known Archeticture instead of creating our own
+- search for **framework boilerplate github** to get one and pull the empty project
+- for our case: **FastAPI boilerplate github**
+
