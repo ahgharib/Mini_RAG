@@ -56,6 +56,8 @@ uvicorn main:app --reload --host 0.0.0.0 --port 5000
 ### Postman
 - an application used to test APIs and it can also be used to export/import API tests to/from other team members
 - for more Info access | abubaker |  mini-rag | video 05 | welcome to fastapi | at roughly 7 minute | from this [Link](https://www.youtube.com/watch?v=cpOuCdzN_Mo&list=PLvLvlVqNQGHCUR2p0b8a0QpVjDUg50wQj&index=5)
+- after exporting the postman test file (json) it should be put in the assets folder
+- Note: this is an extra and optional step that most people do not do but it make things easier for other people
 
 ## Optional for better terminal writting 
 - command for start writting from a new empty line
