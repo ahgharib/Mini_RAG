@@ -22,6 +22,41 @@
 - .env.example is the public file that Must have the same variable Names as .env but without the actual values (secret key values) and it might contain an example of the values
 - .env.example is not ignored by gitignore
 
+## main.py file:
+- this is the file that we will run the app from
+
+## FastAPI logic:
+- import fastapi then make an object called app then use a decorator "@app.get("") or @app.post("")" to call the Fuction we want to use
+- to run the API in Website format:
+
+```bash
+uvicorn main:app
+```
+- or a "--reload" for updating the website server with each live change in the code:
+
+```bash
+uvicorn main:app --reload
+```
+- by default it runs on port **8000** to change the port use this command:
+
+```bash
+uvicorn main:app --reload --port 5000
+```
+- to export the URL and make other devices outside the current server (this device) be able to access the URL use this command:
+
+```bash
+uvicorn main:app --reload --host 0.0.0.0 --port 5000
+```
+- **0.0.0.0** means that you give access to all devices
+- to stop the API from running: press Ctrl + C in the terminal window
+- Use the link in the terminal to run the API on the browser
+- type the link/docs to access the Starnderd FASTAPI Documentation
+- We can Use other Advanced tools to Document like **postman**
+
+### Postman
+- an application used to test APIs and it can also be used to export/import API tests to/from other team members
+- for more Info access | abubaker |  mini-rag | video 05 | welcome to fastapi | at roughly 7 minute | from this [Link](https://www.youtube.com/watch?v=cpOuCdzN_Mo&list=PLvLvlVqNQGHCUR2p0b8a0QpVjDUg50wQj&index=5)
+
 ## Optional for better terminal writting 
 - command for start writting from a new empty line
 
@@ -41,4 +76,9 @@ pip install -r requirements.txt
 
 ```bash
 cp .env.example .env
+```
+
+## Run FastAPI server:
+```bash
+uvicorn main:app --reload --host 0.0.0.0 --port 5000
 ```
